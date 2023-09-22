@@ -22,16 +22,12 @@ const ticTacToe = (element, index) => {
         msgRef.innerHTML="&#x1F389;<br>'X' Wins;
     }
     else{
-        
+        msgRef.innerHTML="&#x1F389;<br>'O' Wins;
+
     }
    } 
+const drawFunction=()=>{
+    disableButtons();
+    msgRef.innerHTML="&#x1F60E;<br>"it's a Draw";
+};
 
-
-// Function to reset the game
-const resetGame = () => {
-   
-    btns.forEach((btn, i) => {
-    btn.addEventListener('click', () => ticTacToe(btn, i));
-});
-
-document.querySelector('#reset').addEventListener('click', resetGame);
