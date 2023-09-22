@@ -30,4 +30,4 @@ const drawFunction=()=>{
     disableButtons();
     msgRef.innerHTML="&#x1F60E;<br>"it's a Draw";
 };
-
+newgameBtn.addEventListener("")
